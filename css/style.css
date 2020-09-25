@@ -94,6 +94,19 @@ li {
     color: #fff;
     outline: none;
     border: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
+
+.card {
+    padding: 1rem;
+}
+
+.l-heading {
+    font-size: 3rem;
 }
 
 
@@ -195,7 +208,7 @@ li {
 }
 
 #home-articles .articles-container .card {
-    padding: 1rem;
+
     background: #fff;
 }
 
@@ -224,7 +237,7 @@ li {
 }
 
 #footer .footer-container .card {
-    padding: 1rem;
+
     background: #444;
 }
 
@@ -253,4 +266,22 @@ li {
     padding: 0.5rem;
     margin-bottom: 0.5rem;
     width: 90%;
+}
+
+#footer .footer-container input[type="submit"]:hover {
+    opacity: 0.9;
+}
+
+/* About Page */
+#main-about .about-container {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    margin: 1.5rem;
+    grid-gap: 1.5rem;
+}
+
+#main-about .about-container > *:first-child {
+    background: #fff;
+    padding: 1rem;
+    grid-row: 1 / span 3;
 }
