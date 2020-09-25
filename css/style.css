@@ -42,6 +42,10 @@ a {
     color: var(--dark-color);
 }
 
+a:hover {
+    color: var(--primary-color) !important;
+}
+
 p {
     margin-bottom: 1.5rem;
 }
@@ -85,6 +89,10 @@ li {
 .bg-dark { 
     background: var(--dark-color);
     color: #fff;
+}
+
+.bg-white {
+    background: #fff;
 }
 
 .btn {
@@ -273,7 +281,8 @@ li {
 }
 
 /* About Page */
-#main-about .about-container {
+#main-about .about-container,
+#main-article .article-content {
     display: grid;
     grid-template-columns: 5fr 2fr;
     margin: 1.5rem;
@@ -284,4 +293,28 @@ li {
     background: #fff;
     padding: 1rem;
     grid-row: 1 / span 3;
+}
+
+/* Articles Page */
+
+#main-article .article-content >*:first-child {
+    grid-row: 1 / span 3;
+}
+
+#main-article .article-content .writer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--light-color);
+    padding: 1rem;
+}
+
+#main-article .article-content ul li {
+    border-bottom: 1px dotted var(--dark-color);
+    padding: 1rem 0;
+}
+
+#main-article .article-content >*:last-child .btn {
+    width: 100%;
+    text-align: center;
 }
