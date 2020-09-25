@@ -72,13 +72,21 @@ li {
 .ent-category { background: var(--ent-color); }
 .tech-category { background: var(--tech-color); }
 
-.bg-primary { background: var(--primary-color);}
+.bg-primary { 
+    background: var(--primary-color);
+    color: #fff;
+}
+.bg-dark { 
+    background: var(--dark-color);
+    color: #fff;
+}
 
 .btn {
     padding: 0.5rem 1.5rem;
     border-radius: 5px;
     color: #fff;
 }
+
 
 /* Navbar */
 #navbar {
@@ -124,6 +132,9 @@ li {
     color: #fff;
 }
 
+
+/* Showcase */
+
 #showcase {
     color: #fff;
     background: #333;
@@ -160,4 +171,32 @@ li {
 
 #showcase .showcase-container h1 {
     font-size: 2rem;
+}
+
+/* Home Articles */
+#home-articles .articles-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+#home-articles .articles-container .card {
+    padding: 1rem;
+    background: #fff;
+}
+
+#home-articles .articles-container > *:first-child,
+#home-articles .articles-container > *:last-child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: span 2;
+    grid-gap: 1rem;
+}
+
+#home-articles .articles-container> *:nth-child(2) {
+    background: var(--dark-color);
+}
+
+#home-articles .articles-container> *:nth-child(6) {
+    background: var(--primary-color);
 }
