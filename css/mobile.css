@@ -34,7 +34,9 @@
 
 @media(max-width: 600px) {
     #home-articles .articles-container,
-    #showcase .showcase-container {
+    #showcase .showcase-container,
+    #main-about .about-container,
+    #main-article .article-content {
         grid-template-columns: 1fr;
     }
 
@@ -42,5 +44,19 @@
         display: flex;
         flex-direction: column;
     }
+
+    #main-about .about-container {
+        text-align: center;
+    }
+
+    #main-article .article-content .writer {
+        flex-direction: column;
+        font-size: small;
+    }
+
+    #main-article .article-content .writer i {
+        margin-bottom: 1rem;
+    }
+
 
 }
